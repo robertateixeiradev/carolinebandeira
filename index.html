@@ -89,7 +89,7 @@
          display: flex;
          flex-direction: column;
          gap: 2rem;
-
+max-width: fit-content;
        }
 
        section{
@@ -106,11 +106,12 @@
        }
        #apresentar{
         display: flex;
+           flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
         max-width: 600px;
-        margin: 5rem 5rem 5rem 5rem;
+        margin: 5rem 5rem 8rem 5rem;
        }
        #box-img-main{
         max-width: 450px;
@@ -128,9 +129,10 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 4rem;
+        padding: 3rem;
         justify-content: space-evenly;
         background-color: #E3D6BD;
+           max-width: fit-content;
        }
       
        #texto{
@@ -147,6 +149,7 @@
         letter-spacing: 2px;
         padding: 4rem;
         font-size: 15px;
+           max-width: fit-content;
        }
        #logos{
         display: flex;
@@ -403,34 +406,38 @@
  display: flex;
  align-items: center;
  flex-wrap: wrap;
-flex-direction: row;
+
 padding: 20px;
 justify-content: center;
 }
 .contaut{
-  flex-direction: row;
+  
   flex-wrap: wrap;
-  flex-direction: row;
+ flex-direction: column;
   gap: 1rem;
   font-size: 18px;
   font-family: Lato, sans-serif;
   letter-spacing: 2px;
-  margin: auto;
+  margin: 20px;
   text-align: justify;
-  padding: 15x;
-  width: 330px;
+  
+  width: 85%;
   max-width: fit-content;
 }
 #autentico img{
   border-radius: 50%;
   border: 1px;
   box-shadow: rgba(39, 32, 32, 0.24) 0px 3px 8px;
-  width:100%;
-  max-width: 300px;
+  width:80%;
+  max-width: fit-content;
   object-fit: cover;
 }
 #aut-img{
   padding: 15px;
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Estilos para dispositivos móveis */
