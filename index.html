@@ -381,12 +381,13 @@
 }
 .especial-section{
   display: flex;
+  flex-wrap: wrap;
   margin-top: 3rem;
   align-items: center;
   min-width: 320dp;
   flex-direction: row;
   margin-bottom: 4rem;
-    justify-content: center;
+  justify-content: center;
 }
 #aut h1, p{
   font-family: Inter, sans-serif;
@@ -403,31 +404,34 @@
  align-items: center;
  flex-wrap: wrap;
 flex-direction: row;
-justify-content: space-evenly;
-
+padding: 20px;
+justify-content: center;
 }
 .contaut{
   flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 1rem;
-  font-size: 1rem;
+  font-size: 18px;
   font-family: Lato, sans-serif;
   letter-spacing: 2px;
-  width: 50%;
+  margin: auto;
   text-align: justify;
-    padding: 15px;
+  padding: 15x;
+  width: 330px;
+  max-width: fit-content;
 }
 #autentico img{
   border-radius: 50%;
   border: 1px;
   box-shadow: rgba(39, 32, 32, 0.24) 0px 3px 8px;
-  width: 100px;
-    
+  width:100%;
+  max-width: 300px;
+  object-fit: cover;
 }
 #aut-img{
-  padding: 5px;
-  width: 20%;
+  padding: 15px;
 }
-
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
@@ -674,7 +678,7 @@ justify-content: space-evenly;
         </div>
       </section>
       
-      <section id="aut" >
+      <section id="aut" class="container-fluid align-items-center">
           <h1 style="font-family: Inter, sans-serif; letter-spacing: 3px;">
               <string style="margin-left: 30px;">Conteúdo Autêntico</string>
              </h1>
